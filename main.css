@@ -3,9 +3,6 @@
     width: 100%;
 }
 
-.col-12 {
-    width: 100%;
-}
 
 .col-1, 
 .col-2,
@@ -17,16 +14,20 @@
 .col-8,
 .col-9,
 .col-10,
-.col-11,
-.col-12 {
-    width: 8.33%;
+.col-11, {
+    width: 9.09%;
     border: 1px solid red;
+}
+
+.col-12 {
+    width: 100%;
+    border: 1px solid black;
 }
 
 
 [class*='col-'] {
     float: left;
-    padding-right: 10px
+    padding-right: 10px;
 }
 
 * {
@@ -41,4 +42,8 @@
 .row:after {
     content:"";
     clear:both;
+}
+
+.container {
+    flex-wrap: wrap;
 }
